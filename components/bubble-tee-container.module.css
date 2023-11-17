@@ -1,0 +1,149 @@
+.image1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 616px;
+  height: 621px;
+  object-fit: cover;
+}
+.frameChild,
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 677px;
+  left: -4px;
+  width: 164px;
+  height: 155px;
+  object-fit: cover;
+}
+.frameInner,
+.frameItem {
+  left: 226px;
+}
+.frameInner {
+  left: 456px;
+}
+.bubbleTee,
+.thngHiu,
+.tnhTrng {
+  position: absolute;
+  line-height: 24px;
+}
+.bubbleTee {
+  top: 6px;
+  left: 726px;
+  display: inline-block;
+  width: 392px;
+  height: 28px;
+}
+.thngHiu,
+.tnhTrng {
+  top: 65px;
+  left: 729px;
+  font-size: var(--font-size-xl);
+}
+.tnhTrng {
+  top: 120px;
+}
+.cThitK {
+  margin: 0;
+}
+.cThitKContainer,
+.div,
+.kchThc {
+  position: absolute;
+  top: 175px;
+  left: 730px;
+  font-size: var(--font-size-sm);
+  line-height: 24px;
+}
+.div,
+.kchThc {
+  top: 359px;
+  font-size: var(--font-size-xl);
+}
+.div {
+  top: 291px;
+  left: 729px;
+  font-size: var(--font-size-5xl);
+}
+.frameChild1,
+.frameChild2,
+.rectangleDiv {
+  position: absolute;
+  border-radius: var(--br-8xs);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  height: 70px;
+}
+.rectangleDiv {
+  top: 545px;
+  left: 729px;
+  background-color: var(--color-white);
+  width: 176px;
+}
+.frameChild1,
+.frameChild2 {
+  left: 954px;
+  background-color: var(--color-black);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 260px;
+}
+.frameChild1 {
+  top: 545px;
+  cursor: pointer;
+}
+.frameChild2 {
+  top: 646px;
+}
+.thmVoGi {
+  position: absolute;
+  top: 569px;
+  left: 967px;
+  font-size: var(--font-size-5xl);
+  line-height: 24px;
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 247px;
+}
+.div1 {
+  left: 744px;
+}
+.div1,
+.div2,
+.div3,
+.muaNgay {
+  position: absolute;
+  top: 568px;
+  line-height: 24px;
+}
+.div2 {
+  left: 807px;
+  font-size: var(--font-size-13xl);
+}
+.div3,
+.muaNgay {
+  left: 860px;
+}
+.muaNgay {
+  top: 669px;
+  left: 1001px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 175px;
+  cursor: pointer;
+}
+.image1Parent {
+  position: absolute;
+  top: 249px;
+  left: 92px;
+  width: 1214px;
+  height: 824px;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-work-sans);
+}

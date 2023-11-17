@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="cart.js"></script>
+    <title>Document</title>
+</head>
+    
+<body>
+    <div id="container">
+        <a href="">Tài khoản</a>
+        <a>Đăng xuất</a>
+        <a>Liên hệ</a>
+    </div>
+    <div id="banner">
+        <img src="image/Rectangle 2.png">
+    </div>
+    <div  id="menu">
+        <table >
+            <tr>
+                <th>HOME</th>
+                <th>CLOTHING</th>
+                <th>CONTACT</th>
+                <th><span class="red-bg">CLEARANCE SALE</span></th>
+                <th style="position: relative;">
+                    <a href="cart.html">
+                    <img src="image/icons8-shopaholic-48.png" style="height: 20px; width: 20px; padding-left: 577px;">
+                    <span id="cart-item-count" class="quantity" style="position: absolute; top: 6px; right: 11px; background-color: red; color: white; border-radius: 5px; width: 13px;">0</span>
+                </a>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <a1>Trang chủ / ALL ITEMS / MIXED BOXY RAGLAN TEE - BLACK/WHITE</a1>
+    <div id="Content">
+        <div id="images" style="float: left;">
+            <img src="image/aoden.jpg" alt="thsirt1" width="470" height="470" 
+            style="margin-top: 40px; margin-left: 40px;">
+        </div>
+        <div id="text" style="float: left; margin-left: 10px; margin-top: 20px;">
+            <p style="font-size: 25px;">MIXED BOXY RAGLAN TEE - BLACK / WHITE</p>
+            <p style="font-size: 14px;">Thương hiệu: <span style="color: #0077be; font-weight: bold;">NEEDS OF WiSDOM®</span> | Tình trạng: <span style="color: #0077be;">Còn hàng</span></p>
+            <p>395.000₫</p>
+            <p style="font-size: 14px;">NEEDS OF WISDOM® / Streetwear / Based in Saigon / Made in Vietnam</p>
+            <p style="font-size: 13px;">Kích thước</p>
+            <div class="size-container">
+                <div class="size-button" onclick="toggleSize(this)">S</div>
+                <div class="size-button" onclick="toggleSize(this)">M</div>
+                <div class="size-button" onclick="toggleSize(this)">L</div>
+                <div class="size-button" onclick="toggleSize(this)">XL</div>               
+            </div>
+            <div id="size-warning" style="color: red; float: left; margin-left: 50px;"></div>
+        </div>
+        <div class="quantity-container">
+            <p style="font-size: 14px;">Số lượng: </p>
+            <div class="quantity-button" onclick="decreaseQuantity()">-</div>
+            <input id="quantity" class="quantity-input" type="number" min="1" value="1">
+            <div class="quantity-button" onclick="increaseQuantity()">+</div>
+            <div class="add-to-cart-button" onclick="addToCart()"><strong>Thêm vào giỏ hàng</strong></div>
+        </div>
+        
+    </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+
+</body>
+</html>

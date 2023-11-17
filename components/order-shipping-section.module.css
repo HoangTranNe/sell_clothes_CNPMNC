@@ -1,0 +1,154 @@
+.footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1481px;
+  height: 451px;
+}
+.frameChild {
+  position: absolute;
+  top: 18px;
+  left: 618px;
+  width: 205px;
+  height: 70px;
+  object-fit: cover;
+}
+.tHngV {
+  position: absolute;
+  top: 107px;
+  left: 518px;
+  line-height: 24px;
+  text-align: center;
+}
+.ngNguynDu {
+  position: absolute;
+  top: 0;
+  left: 54px;
+  line-height: 30px;
+  display: inline-block;
+  width: 367px;
+  height: 66px;
+}
+.clothesIcon {
+  position: absolute;
+  top: 9.9px;
+  left: 0;
+  width: 45px;
+  height: 46.2px;
+  object-fit: cover;
+}
+.ngCmt8QunTnBnhThnhParent,
+.ngNguynDuQun1ThnhPhParent {
+  position: absolute;
+  top: 37.4px;
+  left: 0;
+  width: 421px;
+  height: 66px;
+}
+.ngCmt8QunTnBnhThnhParent {
+  top: 107.8px;
+}
+.span {
+  text-decoration: underline;
+}
+.contactUs,
+.linH0969404274 {
+  position: absolute;
+  top: 188px;
+  left: 10px;
+  line-height: 30px;
+  display: inline-block;
+  width: 421px;
+  height: 33px;
+}
+.contactUs {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  text-decoration: underline;
+  width: 175px;
+}
+.address {
+  position: absolute;
+  top: 161px;
+  left: 87px;
+  width: 431px;
+  height: 221px;
+  font-size: var(--font-size-xl);
+}
+.aboutUs,
+.chnhSchI,
+.giiThiu,
+.hngDnMua {
+  position: absolute;
+  left: 0;
+  line-height: 30px;
+  display: inline-block;
+  width: 175px;
+  height: 33px;
+}
+.aboutUs {
+  top: 0;
+  text-decoration: underline;
+}
+.chnhSchI,
+.giiThiu,
+.hngDnMua {
+  top: 52px;
+}
+.chnhSchI,
+.hngDnMua {
+  top: 100px;
+  width: 266px;
+}
+.chnhSchI {
+  top: 148px;
+}
+.address1,
+.followUs {
+  position: absolute;
+  top: 168px;
+  left: 657px;
+  width: 266px;
+  height: 181px;
+}
+.followUs {
+  top: 0;
+  left: 3px;
+  text-decoration: underline;
+  line-height: 30px;
+  display: inline-block;
+  width: 213px;
+  height: 33px;
+}
+.facebookIcon,
+.instagramIcon {
+  position: absolute;
+  top: 46px;
+  left: 62px;
+  width: 55px;
+  height: 42px;
+  object-fit: cover;
+}
+.facebookIcon {
+  left: 0;
+}
+.follow,
+.footerParent {
+  position: absolute;
+  top: 176px;
+  left: 1081px;
+  width: 216px;
+  height: 88px;
+}
+.footerParent {
+  top: 3092px;
+  left: 0;
+  width: 1440px;
+  height: 451px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

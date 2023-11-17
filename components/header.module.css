@@ -1,0 +1,167 @@
+.headerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 75px;
+}
+.logoStore,
+.logoStoreChild {
+  position: absolute;
+  width: 205px;
+}
+.logoStoreChild {
+  top: 0;
+  left: 0;
+  height: 70px;
+  object-fit: cover;
+}
+.logoStore {
+  top: 19px;
+  left: 92px;
+  height: 49px;
+  cursor: pointer;
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 132px;
+  height: 36px;
+}
+.search,
+.searchIcon {
+  position: absolute;
+  top: 6px;
+}
+.searchIcon {
+  left: 97px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.search {
+  left: 20px;
+  line-height: 24px;
+}
+.vectorParent {
+  position: relative;
+  width: 132px;
+  height: 36px;
+}
+.shoppingCartIcon,
+.userIcon {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.userIcon {
+  position: relative;
+  flex-shrink: 0;
+}
+.shoppingCartIcon {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.frameItem {
+  position: absolute;
+  height: 73.17%;
+  width: 91.45%;
+  top: 4.18%;
+  right: 0.43%;
+  bottom: 22.65%;
+  left: 8.12%;
+  border-radius: 50%;
+  background-color: var(--color-red);
+}
+.div,
+.ellipseParent {
+  position: absolute;
+  top: 0;
+}
+.div {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  line-height: 24px;
+  display: inline-block;
+}
+.ellipseParent {
+  left: 14.6px;
+  width: 23.4px;
+  height: 28.7px;
+}
+.shoppingCart {
+  position: relative;
+  width: 38px;
+  height: 43px;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.frameParent {
+  position: absolute;
+  top: 22px;
+  left: 1102px;
+  width: 253px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xl);
+}
+.speacialPrice {
+  position: relative;
+  line-height: 24px;
+  color: var(--color-red);
+}
+.clothing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 24px;
+}
+.chevronDownIcon {
+  position: absolute;
+  top: 0;
+  left: 72px;
+  width: 22px;
+  height: 24px;
+  overflow: hidden;
+}
+.clothingParent {
+  position: relative;
+  width: 94px;
+  height: 24px;
+}
+.tShirt {
+  position: relative;
+  line-height: 24px;
+}
+.header,
+.navBar {
+  position: absolute;
+}
+.navBar {
+  top: 25px;
+  left: 329px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-14xl);
+  color: var(--color-gray-100);
+}
+.header {
+  top: 0;
+  left: 0;
+  width: 1481px;
+  height: 85px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-work-sans);
+}

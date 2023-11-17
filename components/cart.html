@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        var cartItemsTable = document.getElementById('cart-items-table');
+        var emptyCartMessage = document.getElementById('empty-cart-message');
+        if (cartItems.length > 0) {
+        for (var i = 0; i < cartItems.length; i++) {
+            var item = cartItems[i];
+            var row = cartItemsTable.insertRow(-1);
+
+            var imgCell = row.insertCell(0);
+            imgCell.innerHTML = '<img src="image/aoden.jpg" alt="' + item.name + '" style="width: 100px;">';
+
+            var nameCell = row.insertCell(1);
+            nameCell.innerText = item.name;
+
+            var sizeCell = row.insertCell(2);
+            sizeCell.innerText = item.size;
+
+            var priceCell = row.insertCell(3);
+            priceCell.innerText = item.price + '₫';
+
+            var quantityCell = row.insertCell(4);
+            quantityCell.innerText = item.quantity;
+
+            var totalCell = row.insertCell(5);
+            totalCell.innerText = item.price * item.quantity + '₫';
+
+            var deleteCell = row.insertCell(6);
+            deleteCell.innerHTML = '<img src="image/delete.png" class="delete-icon" onclick="removeItem(' + i + ')">';
+        }
+        
+        var totalPrice = cartItems.reduce(function(total, item) {
+            return total + (item.price * item.quantity);
+        }, 0);
+
+        var totalRow = cartItemsTable.insertRow(-1);
+        var totalLabelCell = totalRow.insertCell(0);
+        var totalValueCell = totalRow.insertCell(1);
+        totalLabelCell.classList.add('total-label');
+        totalValueCell.classList.add('total-value');
+
+        totalLabelCell.innerText = 'Tổng tiền thanh toán';
+        totalValueCell.innerHTML = '<strong class="total-value">' + totalPrice + '₫</strong>';
+    } else {
+                emptyCartMessage.style.display = 'block';
+            }
+            updateCartItemCount();
+    });
+
+    function removeItem(index) {
+    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    var removedItem = cartItems[index];
+
+    var confirmation = confirm("Bạn có chắc chắn muốn xóa sản phẩm này?");
+
+    if (confirmation) {
+        cartItems.splice(index, 1);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        var cartIcon = document.getElementById('cart-item-count');
+        var currentItemCount = parseInt(cartIcon.innerHTML);
+        cartIcon.innerHTML = currentItemCount - removedItem.quantity;
+
+        var cartItemsTable = document.getElementById('cart-items-table');
+        cartItemsTable.deleteRow(index + 1); // +1 because of header row
+
+        updateTotalPrice();
+        updateCartItemCount();
+        if (cartItems.length === 0) {
+                    clearCartItemsTable();
+                    var emptyCartMessage = document.getElementById('empty-cart-message');
+                    emptyCartMessage.style.display = 'block';
+                }
+        }
+    }
+    function clearCartItemsTable() {
+            var cartItemsTable = document.getElementById('cart-items-table');
+            var rowCount = cartItemsTable.rows.length;
+
+            for (var i = rowCount - 1; i > 0; i--) {
+                cartItemsTable.deleteRow(i);
+            }
+        }
+        function updateTotalPrice() {
+            var cartItemsTable = document.getElementById('cart-items-table');
+            var totalPriceCell = cartItemsTable.rows[cartItemsTable.rows.length - 1].cells[1];
+            var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            var totalPrice = cartItems.reduce(function(total, item) {
+                return total + (item.price * item.quantity);
+            }, 0);
+
+            totalPriceCell.innerHTML = '<strong>' + totalPrice + '₫</strong>';
+        }
+        function updateCartItemCount() {
+            var cartIcon = document.getElementById('cart-item-count');
+            var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            var itemCount = cartItems.reduce(function(total, item) {
+                return total + item.quantity;
+            }, 0);
+            cartIcon.innerHTML = itemCount;
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+        // Kiểm tra xem có thông tin giỏ hàng trong localStorage hay không
+        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        
+        // Cập nhật số lượng sản phẩm trên biểu tượng giỏ hàng
+        updateCartItemCount(cartItems);
+
+        var cartItemsTable = document.getElementById('cart-items-table');
+
+        for (var i = 0; i < cartItems.length; i++) {
+            // ... (code để hiển thị thông tin sản phẩm)
+        }
+
+        updateTotalPrice();
+    });
+    function updateCartItemCount(cartItems) {
+    var cartIcon = document.getElementById('cart-item-count');
+    var itemCount = cartItems.reduce(function(total, item) {
+        return total + item.quantity;
+    }, 0);
+    cartIcon.innerHTML = itemCount;
+}
+    </script>
+</head>
+    
+</head>
+<body>
+    <div id="container">
+        <a>Tài khoản</a>
+        <a>Đăng xuất</a>
+        <a>Liên hệ</a>
+    </div>
+    <div id="banner">
+        <img src="image/Rectangle 2.png">
+    </div>
+    <div id="menu">
+        <table>
+            <tr>
+                <th>HOME</th>
+                <th>CLOTHING</th>
+                <th>CONTACT</th>
+                <th><span class="red-bg">CLEARANCE SALE</span></th>
+                <th style="position: relative;">
+                    <a href="cart.html">
+                    <img src="image/icons8-shopaholic-48.png" style="height: 20px; width: 20px; padding-left: 577px;">
+                    <span id="cart-item-count" class="quantity" style="position: absolute; top: 6px; right: 11px; background-color: red; color: white; border-radius: 5px; width: 13px;">0</span>
+                </a>
+                </th>          
+            </tr>
+        </table>
+    </div>
+    <br>
+    <a1>Trang chủ / Giỏ hàng</a1>
+    <div id="Content">
+        <p style="padding-top: 30px;">Giỏ hàng của bạn</p>
+        
+        <table id="cart-items-table" style="width: 100%;">
+            <tr>
+                <td>Ảnh sản phẩm</td>
+                <td class="product-name">Tên sản phẩm</td>
+                <td>Size</td>
+                <td>Đơn giá</td>
+                <td>Số lượng</td>
+                <td>Thành tiền</td>
+                <td>Xóa</td>
+            </tr>  
+            
+            <table style="margin-top: 20px; margin-left: 823px; width: 400px; height: 77px;">    
+                <button style="margin-left: 4%; margin-top:20px;" ><strong>Tiếp tục mua hàng</strong></button>         
+            </table>
+            
+        </table>
+        
+        <br>
+        <button style="margin-left: 823px; width: 400px; height: 50px; font-size: 19px;"><strong>Tiến hành thanh toán</strong></button>
+        
+    </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+
+</body>
+</html>

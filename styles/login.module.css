@@ -1,0 +1,266 @@
+.login {
+    align-items: flex-start;
+    background-color: #ffffff;
+    display: flex;
+    gap: 117px;
+    height: 1024px;
+    justify-content: flex-end;
+    padding: 30px 47px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .login .frame {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 703px;
+    justify-content: center;
+    padding: 30px 0px;
+    position: relative;
+    width: 573px;
+  }
+  
+  .login .rectangle {
+    height: 211px;
+    object-fit: cover;
+    position: relative;
+    width: 334px;
+  }
+  
+  .login .text_wrapper {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    width: 566px;
+  }
+  
+  .login .overlap_wrapper {
+    background-color: #ffffff;
+    height: 864px;
+    overflow: hidden;
+    position: relative;
+    width: 639px;
+  }
+  
+  .login .overlap {
+    height: 864px;
+    position: relative;
+    width: 641px;
+  }
+  
+  .login .div {
+    background-color: #ffffff;
+    height: 864px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 639px;
+  }
+  
+  .login .group {
+    height: 39px;
+    left: 44px;
+    position: absolute;
+    top: 341px;
+    width: 217px;
+  }
+  
+  .login .rectangle_2 {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 5px;
+    height: 39px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 43px;
+  }
+  
+  .login .text_wrapper_2 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    left: 57px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+  }
+  
+  .login .text_wrapper_3 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    left: 363px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 347px;
+    white-space: nowrap;
+    margin-left: 30px;
+  }
+  
+  .login .overlap_group_wrapper {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 113px;
+    width: 551px;
+  }
+  
+  .login .overlap_group {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+    width: 549px;
+  }
+  .login .overlap_group .usernameLogin{
+    width: 100%;
+    height: 100px;
+  }
+  
+  .login .text_wrapper_4 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+  }
+  
+  .login .div_wrapper {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 227px;
+    width: 551px;
+  }
+  
+  .login .text_wrapper_5 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 29px;
+    white-space: nowrap;
+  }
+  
+  .login .vector {
+    height: 32px;
+    left: 494px;
+    position: absolute;
+    top: 25px;
+    width: 46px;
+  }
+  
+  .login .group_2 {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 406px;
+    width: 551px;
+  }
+  
+  .login .overlap_2 {
+    background-color: #000000;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 5px;
+    height: 80px;
+    position: relative;
+    width: 549px;
+    margin-top: 380px;
+    margin-left:20px
+  }
+  
+  .login .text_wrapper_6 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    left: 237px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  .login .group_3 {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 512px;
+    width: 551px;
+  }
+  
+  .login .text_wrapper_7 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    left: 173px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 26px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  .login .remove_red_eye {
+    height: 51px;
+    left: 526px;
+    position: absolute;
+    top: 290px;
+    width: 50px;
+  }
+  
+  .login .group_4 {
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 16px;
+    width: 641px;
+  }
+  
+  .login .text_wrapper_8 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    left: 287px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .login .line {
+    height: 3px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 43px;
+    width: 639px;
+  }
+  .login .lost{
+    text-decoration: none;
+    color: #000000;
+  }

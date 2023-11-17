@@ -1,0 +1,33 @@
+.settingsContainer {
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+}
+
+.settingsHeading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.settingsLabel {
+  font-weight: bold;
+}
+
+.settingsInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.settingsCheckbox {
+  margin-right: 5px;
+}
+
+.settingsButton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

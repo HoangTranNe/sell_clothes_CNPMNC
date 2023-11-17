@@ -1,0 +1,50 @@
+.groupChild,
+.s {
+  position: absolute;
+}
+.groupChild {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.s {
+  top: 33.33%;
+  left: 31.76%;
+  line-height: 24px;
+}
+.rectangleParent {
+  position: relative;
+  width: 85px;
+  height: 75px;
+}
+.xl {
+  position: absolute;
+  width: 100%;
+  top: 33.33%;
+  left: 0;
+  line-height: 24px;
+  display: inline-block;
+}
+.groupDiv {
+  position: relative;
+  width: 85px;
+  height: 75px;
+  text-align: center;
+}
+.component1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-16xl);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-work-sans);
+}

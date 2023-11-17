@@ -1,0 +1,120 @@
+.bubbleTee {
+  color: var(--color-red);
+}
+.trangChContainer {
+  position: absolute;
+  top: 0;
+  left: 99px;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+  width: 375px;
+  height: 28px;
+}
+.frameChild {
+  position: absolute;
+  top: 34.5px;
+  left: -0.5px;
+  border-top: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 1482px;
+  height: 1px;
+}
+.trangChTtCSnPhmParent {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 1481px;
+  height: 35px;
+  font-size: var(--font-size-base);
+}
+.frameItem {
+  position: absolute;
+  top: 97px;
+  left: 80px;
+  width: 1138px;
+  height: 1091px;
+  object-fit: cover;
+}
+.sizeChart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 24px;
+  font-weight: 600;
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 1218px;
+  height: 1188px;
+}
+.ccSnPhm {
+  position: absolute;
+  top: 1277px;
+  left: 392px;
+  font-size: var(--font-size-13xl);
+  line-height: 24px;
+  font-weight: 600;
+}
+.frameChild1,
+.frameInner,
+.rectangleIcon {
+  position: absolute;
+  top: 1363px;
+  left: 0;
+  width: 363px;
+  height: 417px;
+  object-fit: cover;
+}
+.frameChild1,
+.rectangleIcon {
+  left: 420px;
+}
+.frameChild1 {
+  left: 856px;
+}
+.happyTee {
+  margin: 0;
+  font-weight: 600;
+}
+.p {
+  margin: 0;
+}
+.happyTeeContainer,
+.happyTeeContainer1,
+.happyTeeContainer2 {
+  position: absolute;
+  top: 1802px;
+  left: 49px;
+  line-height: 24px;
+}
+.happyTeeContainer1,
+.happyTeeContainer2 {
+  left: 488px;
+}
+.happyTeeContainer2 {
+  left: 927px;
+}
+.frameParent {
+  position: absolute;
+  top: 1165px;
+  left: 78px;
+  width: 1232px;
+  height: 1874px;
+  font-size: var(--font-size-xl);
+}
+.property1default {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1368px;
+  height: 3543px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-work-sans);
+}
